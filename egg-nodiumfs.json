@@ -7,7 +7,7 @@
     "name": "NodiumFS",
     "author": "admin@nodiumhosting.com",
     "description": "A file server based on nginx",
-    "image": "registry.gitlab.com\/mcmelontube\/pterodactyl-file-server-nodium",
+    "image": "registry.gitlab.com\/mcmelontube\/pterodactyl-file-server-nodium:hello",
     "startup": ".\/start.sh",
     "config": {
         "files": "{\r\n    \"nginx\/conf.d\/default.conf\": {\r\n        \"parser\": \"file\",\r\n        \"find\": {\r\n            \"    listen \": \"    listen {{server.build.default.port}};\"\r\n        }\r\n    }\r\n}",
